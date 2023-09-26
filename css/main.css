@@ -37,20 +37,19 @@ nav {
 footer {
   display: flex;
   justify-content: space-around;
+  color: white;
+  background-color: rgb(8, 8, 120);
 }
 
 .footer {
-  background-color: rgb(8, 8, 120);
-  padding: 50px;
-  color: white;
+  width: 18%;
   line-height: 30px;
+  padding: 3% 0;
 }
-
-.icon {
+.footer .icon {
   display: flex;
   gap: 15px;
 }
-
-i {
+.footer i {
   color: white;
 }/*# sourceMappingURL=main.css.map */

@@ -1,18 +1,6 @@
 @import "./components/group-minxin";
 @import "./components/variable";
 
-
-.nav-right>a {
-    padding: 10px;
-    text-decoration: none;
-    font-weight: 40px;
-    color: $main-color;
-    :hover {
-        color: $primary-color ;
-        padding: 11px;
-    }
-}
-
 /* ------------------main-------------- */
 
 header{
