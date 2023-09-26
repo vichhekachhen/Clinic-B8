@@ -1,18 +1,23 @@
 @import "variable";
+
 footer {
     display: flex;
     justify-content: space-around;
+    color: $secondary-color;
+    background-color: $tertiary-color;
 }
+
 .footer {
-    background-color:$tertiary-color;
-    padding: 50px;
-    color: $secondary-color;
+    width: 18%;
     line-height: 30px;
-}
-.icon {
-    display: flex;
-    gap: 15px;
- }
-i{
-    color: $secondary-color;
+    padding: 3% 0;
+
+    .icon {
+        display: flex;
+        gap: 15px;
+    }
+
+    i {
+        color: $secondary-color;
+    }
 }
