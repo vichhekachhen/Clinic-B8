@@ -1,0 +1,18 @@
+@import "variable";
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+.footer {
+    background-color:$tertiary-color;
+    padding: 50px;
+    color: $secondary-color;
+    line-height: 30px;
+}
+.icon {
+    display: flex;
+    gap: 15px;
+ }
+i{
+    color: $secondary-color;
+}
