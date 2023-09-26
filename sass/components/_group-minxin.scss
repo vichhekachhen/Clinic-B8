@@ -2,3 +2,7 @@
     text-align: center;
     align-items: center;
 }
+@mixin item-center{
+    display: flex;
+    justify-content: center;
+}
