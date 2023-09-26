@@ -1,1 +1,36 @@
-/*# sourceMappingURL=contact-us.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo > img {
+  width: 50%;
+}
+
+.nav-right {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-right a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+input[type=submit] {
+  padding: 10px;
+  background: #139ADF;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}/*# sourceMappingURL=contact-us.css.map */

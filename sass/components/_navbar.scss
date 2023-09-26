@@ -1,0 +1,31 @@
+@import "variable";
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo>img {
+    width: 50%;
+}
+
+.nav-right {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    a {
+        padding: 10px;
+        text-decoration: none;
+        color: $main-color;
+    }
+}
+input[type="submit"] {
+    padding: 10px;
+    background: $primary-color;
+    border: none;
+    border-radius: 8px;
+    color: $secondary-color;
+    cursor: pointer;
+}
+
+
