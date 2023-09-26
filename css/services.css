@@ -3,14 +3,18 @@ header {
   background-position: center;
   background-size: cover;
   position: relative;
-  color: rgb(51, 100, 168);
+  color: #139ADF;
   padding: 8%;
   height: 65vh;
 }
 header p {
+<<<<<<< HEAD
   background-color: rgba(222, 222, 214, 0.3);
   backdrop-filter: blur(4px);
+=======
+>>>>>>> bdee9913cf2b3224e44cdb86fdf425e98f6f10da
   padding: 6px;
+  font-weight: bold;
 }
 
 h2 {
@@ -20,9 +24,9 @@ h2 {
 .title {
   text-align: center;
   align-items: center;
-  margin: 5%;
   text-align: center;
   text-transform: uppercase;
+  margin: 2%;
 }
 
 .service-image {
@@ -34,24 +38,20 @@ h2 {
   margin: 15px;
 }
 .service-image .service-image-right {
-  margin: 15px;
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  margin: 15px;
 }
 
 .service-container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 0px 45px;
-}
-.service-container .service-container-left {
-  width: 50%;
 }
 .service-container .service-container-right {
   text-align: center;
   align-items: center;
-  width: 50%;
 }
 .service-container .service-container-right p {
   line-height: 20px;
@@ -59,12 +59,15 @@ h2 {
 
 .service-team {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 0px 30px;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0px 45px;
 }
-.service-team .service-team-image {
+.service-team .card-team {
   text-align: center;
   align-items: center;
+}
+.service-team .card-team h5 {
+  padding: 10px;
 }
 
 .service-container-team {
@@ -75,25 +78,24 @@ h2 {
 
 .card-service {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
 .card-service .service {
-  margin: 15px;
+  margin: 50px;
 }
 .card-service .service p {
   text-align: center;
   align-items: center;
+  color: rgb(8, 8, 120);
   font-weight: bold;
+  padding: 10px;
 }
 
 .value {
   margin: 10px 50px;
 }
-.value strong {
+.value p {
   line-height: 50px;
-}
-.value strong .value-color {
-  color: rgb(10, 10, 130);
 }
 
 .timetable {
@@ -103,12 +105,12 @@ h2 {
 table,
 th,
 td {
+  padding: 15px;
   border: 1px solid rgb(189, 189, 189);
   border-collapse: collapse;
-  padding: 15px;
 }
 table th,
 th th,
 td th {
-  color: rgb(10, 8, 128);
+  color: rgb(8, 8, 120);
 }/*# sourceMappingURL=services.css.map */

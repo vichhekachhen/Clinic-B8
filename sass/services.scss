@@ -1,27 +1,29 @@
 @import "./components/group-minxin";
+@import "./components/variable";
 
 header {
     background-image: url(/images/service/pic1.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
-    color: rgb(51, 100, 168);
+    color: $primary-color;
     padding: 8%;
     height: 65vh;
     p {
-        background-color: rgba(222, 222, 214, 0.3);
-        backdrop-filter: blur(4px);
         padding: 6px;
+        font-weight: bold;
     }
 }
+
 h2 {
     padding: 10px;
 }
-.title{
+
+.title {
     @include content-centered;
-    margin: 5%;
     text-align: center;
     text-transform: uppercase;
+    margin: 2%;
 }
 
 .service-image {
@@ -31,39 +33,36 @@ h2 {
     .service-image-left {
         margin: 15px;
     }
+
     .service-image-right {
-        margin: 15px;
         display: flex;
         flex-wrap: wrap;
         gap: 12px;
+        margin: 15px;
     }
-
 }
 
-
 .service-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 0px 45px;
-    .service-container-left {
-        width: 50%;
-    }
     .service-container-right {
         @include content-centered;
-        width: 50%;p {
+        p {
             line-height: 20px;
         }
-
     }
-
 }
 
 .service-team {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 0px 30px;
-    .service-team-image{
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0px 45px;
+    .card-team {
         @include content-centered;
+        h5 {
+            padding: 10px;
+        }
     }
 }
 
@@ -74,26 +73,25 @@ h2 {
 
 .card-service {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     .service {
-        margin: 15px;
+        margin: 50px;
         p {
             @include content-centered;
+            color:  $tertiary-color;
             font-weight: bold;
+            padding: 10px;
         }
     }
 }
 
 .value {
     margin: 10px 50px;
-    strong {
+
+    p {
         line-height: 50px;
-        .value-color {
-            color: rgb(10, 10, 130);
-        }
     }
 }
-
 
 .timetable {
     margin: 30px 0px;
@@ -102,10 +100,11 @@ h2 {
 table,
 th,
 td {
-    border: 1px solid rgb(189, 189, 189);
-    border-collapse: collapse;
     padding: 15px;
+    border: 1px solid $quaternary-color;
+    border-collapse: collapse;
+
     th {
-        color: rgb(10, 8, 128);
+        color: $tertiary-color;
     }
 }
