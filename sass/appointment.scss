@@ -1,0 +1,82 @@
+@import "./components/group-minxin";
+@import "./components/variable";
+header {
+    background-image: url(/images/service/pic1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: $primary-color;
+    padding: 8%;
+    height: 65vh;
+    .text-name {
+        padding: 6px;
+        font-weight: bold;
+    }
+}
+.text-information {
+    margin: 40px;
+    h3 {
+        padding: 15px;
+        color: $tertiary-color;
+    }
+    p, li{
+        margin: 0 30px;
+        
+    }
+    #note {
+        font-weight: bold;
+        margin: 10px;
+        color: $tertiary-color;
+    }
+}
+form{
+    padding: 30px;
+    border-radius: 10px;
+    width: 70%;
+    height: 100vh;
+    margin: auto;
+     h1{
+        text-align: center;
+        margin: 10px;
+    }
+    .input-group,
+    .name , 
+    .text, 
+    .messeng{
+        margin-bottom: 30px;
+        width: 97.5%;
+    }
+    .input-group{
+        width: 47.9%;
+    }
+    label {
+        font-weight: bold;
+    }
+    input[type="text"],input[type="email"], textarea{
+        width: 100%;
+        padding: 10px;
+        outline: 0;
+        border: 1px solid #231212;
+        color:$main-color;
+        background: transparent;
+        font-size: 15px;
+    }
+    .input-group1{
+        display: flex;
+        gap: 10px;
+    }
+    button{
+        margin-bottom: 20px;
+        width: 20%;
+        height: 7vh;
+        border-radius: 10px;
+        border: $primary-color;
+        background-color:$primary-color;
+        color: white;
+        font-size: large;
+    }
+    .button{
+        @include item-center;
+        align-items: center;
+    }
+}

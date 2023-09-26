@@ -8,11 +8,6 @@ header {
   height: 65vh;
 }
 header p {
-<<<<<<< HEAD
-  background-color: rgba(222, 222, 214, 0.3);
-  backdrop-filter: blur(4px);
-=======
->>>>>>> bdee9913cf2b3224e44cdb86fdf425e98f6f10da
   padding: 6px;
   font-weight: bold;
 }
