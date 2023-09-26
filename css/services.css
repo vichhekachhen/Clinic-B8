@@ -1,57 +1,115 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+header {
+  background-image: url(/images/service/pic1.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: rgb(51, 100, 168);
+  padding: 8%;
+  height: 65vh;
+}
+header p {
+  background-color: rgba(222, 222, 214, 0.3);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  padding: 6px;
 }
 
-nav {
+h2 {
+  padding: 10px;
+}
+
+.title {
+  text-align: center;
+  align-items: center;
+  margin: 5%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.service-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0px 30px;
+}
+.service-image .service-image-left {
+  margin: 15px;
+}
+.service-image .service-image-right {
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.service-container {
   display: flex;
   justify-content: space-between;
+  margin: 0px 45px;
+}
+.service-container .service-container-left {
+  width: 50%;
+}
+.service-container .service-container-right {
+  text-align: center;
+  align-items: center;
+  width: 50%;
+}
+.service-container .service-container-right p {
+  line-height: 20px;
+}
+
+.service-team {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0px 30px;
+}
+.service-team .service-team-image {
+  text-align: center;
   align-items: center;
 }
 
-.logo > img {
-  width: 50%;
+.service-container-team {
+  text-align: center;
+  align-items: center;
+  margin: 25px 50px;
 }
 
-.nav-right {
-  width: 40%;
-  display: flex;
-  justify-content: space-evenly;
+.card-service {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-.nav-right a {
-  padding: 10px;
-  text-decoration: none;
-  color: black;
+.card-service .service {
+  margin: 15px;
 }
-
-input[type=submit] {
-  padding: 10px;
-  background: #139ADF;
-  border: none;
-  border-radius: 8px;
-  color: white;
-  cursor: pointer;
+.card-service .service p {
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
 }
 
-footer {
-  display: flex;
-  justify-content: space-around;
+.value {
+  margin: 10px 50px;
+}
+.value strong {
+  line-height: 50px;
+}
+.value strong .value-color {
+  color: rgb(10, 10, 130);
 }
 
-.footer {
-  background-color: rgb(8, 8, 120);
-  padding: 50px;
-  color: white;
-  line-height: 30px;
+.timetable {
+  margin: 30px 0px;
 }
 
-.icon {
-  display: flex;
-  gap: 15px;
+table,
+th,
+td {
+  border: 1px solid rgb(189, 189, 189);
+  border-collapse: collapse;
+  padding: 15px;
 }
-
-i {
-  color: white;
+table th,
+th th,
+td th {
+  color: rgb(10, 8, 128);
 }/*# sourceMappingURL=services.css.map */

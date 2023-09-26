@@ -5,7 +5,7 @@ nav {
     align-items: center;
 }
 
-.logo>img {
+.logo img {
     width: 50%;
 }
 
@@ -18,14 +18,15 @@ nav {
         text-decoration: none;
         color: $main-color;
     }
+    #appointment {
+        padding: 10px;
+        background: $primary-color;
+        border: none;
+        border-radius: 8px;
+        color: $secondary-color;
+        cursor: pointer;
+    }
 }
-input[type="submit"] {
-    padding: 10px;
-    background: $primary-color;
-    border: none;
-    border-radius: 8px;
-    color: $secondary-color;
-    cursor: pointer;
-}
+
 
 

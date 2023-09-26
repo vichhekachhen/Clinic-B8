@@ -11,7 +11,7 @@ nav {
   align-items: center;
 }
 
-.logo > img {
+.logo img {
   width: 50%;
 }
 
@@ -25,8 +25,7 @@ nav {
   text-decoration: none;
   color: black;
 }
-
-input[type=submit] {
+.nav-right #appointment {
   padding: 10px;
   background: #139ADF;
   border: none;

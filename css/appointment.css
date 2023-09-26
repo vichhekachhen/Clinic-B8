@@ -1,0 +1,20 @@
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer {
+  background-color: rgb(8, 8, 120);
+  padding: 50px;
+  color: white;
+  line-height: 30px;
+}
+
+.icon {
+  display: flex;
+  gap: 15px;
+}
+
+i {
+  color: white;
+}/*# sourceMappingURL=appointment.css.map */
