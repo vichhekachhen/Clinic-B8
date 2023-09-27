@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"sourceRoot":"","sources":["../../sass/main.scss","../../sass/components/_navbar.scss","../../sass/components/_variable.scss","../../sass/components/_footer.scss"],"names":[],"mappings":"AAAA,EACI,SACA,UACA,sBACA,uCCHJ,IACI,WACA,aACA,8BACA,iBCDa,KDEb,mBACA,eACA,UACA,MAGJ,UACI,UAGJ,WACI,UACA,aACA,6BACA,aACI,aACA,qBACA,MCvBI,KDyBR,wBACI,aACA,WC1BO,QD2BP,YACA,kBACA,MC1BS,KD2BT,eE7BR,OACI,aACA,6BACA,MDDa,KCEb,iBDDY,QCIhB,QACI,UACA,iBACA,aAEA,cACI,aACA,SAGJ,UACI,MDhBS","file":"main.min.css"}
+=======
+{"version":3,"sources":["../../sass/main.scss","../../sass/components/_navbar.scss","../../sass/components/_variable.scss","../../sass/components/_footer.scss"],"names":[],"mappings":"AAAA,EACI,QAAA,CACA,SAAA,CACA,qBAAA,CACA,iBAAA,CCHJ,IACI,YAAA,CACA,6BAAA,CACA,kBAAA,CAGJ,UACI,SAAA,CAGJ,WACI,SAAA,CACA,YAAA,CACA,4BAAA,CACA,aACI,WAAA,CACA,oBAAA,CACA,UClBI,CDoBN,wBACE,WAAA,CACA,kBCrBO,CDsBP,WAAA,CACA,iBAAA,CACA,UCrBS,CDsBT,cAAA,CExBR,OACI,YAAA,CACA,4BAAA,CACA,UDDa,CCEb,wBDDY,CCIhB,QACI,SAAA,CACA,gBAAA,CACA,YAAA,CAEA,cACI,YAAA,CACA,QAAA,CAGJ,UACI,UDhBS","file":"main.min.css"}
+>>>>>>> d4e61e3969c6c23127740a071f6ba261c1f8244f
