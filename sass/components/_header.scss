@@ -1,0 +1,15 @@
+header {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: $primary-color;
+    padding: 8%;
+    height: 75vh;
+    p {
+        padding: 6px;
+        font-weight: bold;
+      }
+    h1 {
+        padding: 10px;
+      }
+}

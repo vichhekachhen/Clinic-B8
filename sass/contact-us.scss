@@ -1,20 +1,9 @@
 @import "./components/group-minxin";
 @import "./components/variable";
+@import "./components/header";
 header {
     background-image: url(/images/service/pic1.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: $primary-color;
-    padding: 8%;
-    height: 65vh;
-    p {
-        padding: 6px;
-        font-weight: bold;
-    }
-    h1{
-        padding: 15px;
-    }
+
 }
 .text h1 {
     text-align: center;

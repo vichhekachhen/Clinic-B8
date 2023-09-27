@@ -1,24 +1,9 @@
-@import "./components/group-mixin";
 @import "./components/variable";
+@import "./components/header";
 
 header {
   background-image: url(/images/service/pic1.jpg);
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: $primary-color;
-  padding: 8%;
-
-  p {
-    padding: 6px;
-    font-weight: bold;
-  }
 }
-
-h2 {
-  padding: 10px;
-}
-
 .title {
   @include text-center;
   text-transform: uppercase;

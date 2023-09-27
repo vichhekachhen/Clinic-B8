@@ -1,17 +1,8 @@
 @import "./components/group-minxin";
 @import "./components/variable";
+@import "./components/header";
 header {
-    background-image: url(/images/service/pic1.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: $primary-color;
-    padding: 8%;
-    height: 65vh;
-    .text-name {
-        padding: 6px;
-        font-weight: bold;
-    }
+    background-image: url(/images/service/pic2.webp);
 }
 .text-information {
     margin: 40px;
