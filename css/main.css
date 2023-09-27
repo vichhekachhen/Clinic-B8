@@ -39,6 +39,14 @@ nav {
   cursor: pointer;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  a {
+    padding: 1em;
+  }
+  #appointment {
+    display: none;
+  }
+}
 footer {
   display: flex;
   justify-content: space-around;
