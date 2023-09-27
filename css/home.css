@@ -13,6 +13,7 @@ header p {
   color: #139ADF;
 }
 header h1 {
+  font-size: 45px;
   margin-top: 20px;
   margin-left: 30px;
   color: #139ADF;
@@ -32,12 +33,8 @@ header #request {
   font-size: 20px;
   padding: 10px;
 }
-header #request :hover {
+header #request:hover {
   font-size: 21px;
-}
-
-h1 {
-  font-size: 45px;
 }
 
 /* ----card-header---- */
@@ -51,26 +48,28 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   padding: 30px;
   color: white;
-}
-.card-bg :first-child {
-  background-color: rgba(3, 81, 159, 0.58);
-}
-.card-bg :nth-child(3) {
-  background-color: rgba(65, 127, 194, 0.8235294118);
 }
 .card-bg i {
   font-size: 35px;
   color: #139ADF;
   background-color: white;
-  border-radius: 25px;
+  border-radius: 20px;
+  margin-bottom: 10px;
   padding: 5px;
 }
 .card-bg p {
   margin-top: 10px;
   color: white;
+}
+
+.card-bg:first-child {
+  background-color: rgba(3, 81, 159, 0.58);
+}
+
+.card-bg:nth-child(3) {
+  background-color: rgba(65, 127, 194, 0.8235294118);
 }
 
 /* -----aside----- */
@@ -85,7 +84,7 @@ aside {
   text-align: center;
 }
 .title h1 {
-  font-size: 40px;
+  font-size: 30px;
 }
 .title h1,
 .title p {
@@ -107,13 +106,13 @@ aside {
 
 .main-point {
   display: flex;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 .main-point i {
   background-color: #0385BB;
-  border-radius: 30px;
+  border-radius: 20px;
   margin-right: 10px;
   padding: 5px;
   color: white;
@@ -121,7 +120,7 @@ aside {
 
 .aside-one {
   width: 100%;
-  height: 340px;
+  height: 358px;
   background-image: url(../images/home/image-2.jpg);
   background-size: cover;
   display: flex;
@@ -133,7 +132,7 @@ aside {
 .card-clinics {
   flex-direction: column;
   background: rgba(3, 81, 159, 0.58);
-  padding: 126px;
+  padding: 110px;
   font-size: 25px;
 }
 .card-clinics i {
@@ -181,11 +180,13 @@ tr th {
 tr td {
   color: #5686E1;
 }
-tr td :first-child {
+
+tr td:first-child {
   border-radius: 5px;
   background-color: rgba(189, 189, 189, 0.743);
 }
-tr td :nth-child(3) {
+
+tr td:nth-child(3) {
   border-radius: 5px;
   background: rgba(65, 127, 194, 0.8235294118);
   color: white;
@@ -198,10 +199,15 @@ tr td :nth-child(3) {
   margin-bottom: 20px;
 }
 
+.aside-right > p {
+  margin-bottom: 40px;
+}
+
 .card-aside {
   display: flex;
+  justify-content: center;
   text-align: center;
-  gap: 10;
+  gap: 20px;
 }
 
 .aside-right {
@@ -209,12 +215,14 @@ tr td :nth-child(3) {
   text-align: center;
   padding: 20px;
 }
+
 .card-1 > img {
-  width: 300px;
+  width: 320px;
 }
 .card-1 > img p {
   font-size: 20px;
 }
+
 p > label {
   color: #5686E1;
   font-style: normal;
