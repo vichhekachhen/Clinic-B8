@@ -28,8 +28,10 @@ form{
     background-color: $secondary-color;
     margin: auto;
     .text h1{
-        text-align: start;
         margin-bottom: 10px;
+    }
+    p{
+        padding-bottom: 10px;
     }
     .input-group,
     .name , 
@@ -45,7 +47,7 @@ form{
         width: 100%;
         padding: 10px;
         outline: 0;
-        border: 1px solid #231212;
+        border: 1px solid #2312127e;
         color:$main-color;
         background: transparent;
         font-size: 15px;

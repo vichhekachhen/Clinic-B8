@@ -29,8 +29,10 @@ form {
   margin: auto;
 }
 form .text h1 {
-  text-align: start;
   margin-bottom: 10px;
+}
+form p {
+  padding-bottom: 10px;
 }
 form .input-group,
 form .name,
@@ -46,7 +48,7 @@ form input[type=text], form input[type=email], form textarea {
   width: 100%;
   padding: 10px;
   outline: 0;
-  border: 1px solid #231212;
+  border: 1px solid rgba(35, 18, 18, 0.4941176471);
   color: black;
   background: transparent;
   font-size: 15px;
