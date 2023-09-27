@@ -5,11 +5,12 @@ header {
     color: $primary-color;
     padding: 8%;
     height: 75vh;
+    margin-top: 60px;
+    h1 {
+        padding: 10px;
+      }
     p {
         padding: 6px;
         font-weight: bold;
-      }
-    h1 {
-        padding: 10px;
       }
 }

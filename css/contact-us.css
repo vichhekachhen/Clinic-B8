@@ -5,13 +5,14 @@ header {
   color: #139ADF;
   padding: 8%;
   height: 75vh;
+  margin-top: 60px;
+}
+header h1 {
+  padding: 10px;
 }
 header p {
   padding: 6px;
   font-weight: bold;
-}
-header h1 {
-  padding: 10px;
 }
 
 header {
