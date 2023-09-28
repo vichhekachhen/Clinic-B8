@@ -22,7 +22,6 @@ header {
 header h1 {
   font-size: 45px;
   margin-top: 20px;
-  margin-left: 30px;
   color: #139ADF;
 }
 header #request {
@@ -31,7 +30,7 @@ header #request {
   text-decoration: none;
   border-radius: 10px;
   margin-top: 40px;
-  margin-left: 30px;
+  margin-left: 10px;
   font-size: 20px;
   padding: 10px;
 }

@@ -5,6 +5,13 @@ footer {
     justify-content: space-around;
     color: $secondary-color;
     background-color: $tertiary-color;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+ul {
+    list-style: none;
 }
 
 .footer {
@@ -16,8 +23,9 @@ footer {
         display: flex;
         gap: 15px;
     }
-
     i {
         color: $secondary-color;
+       
     }
+
 }
