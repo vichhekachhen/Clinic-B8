@@ -111,4 +111,27 @@ form .button {
   body .input-group {
     width: 47.4%;
   }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  body {
+    background-color: rgba(218, 220, 221, 0.579);
+  }
+  body form {
+    width: 77%;
+    height: 88vh;
+    margin-top: 30px;
+  }
+  body .text h1 {
+    margin-top: 10px;
+    font-size: x-large;
+  }
+  body button {
+    width: 30%;
+  }
+  body .input-group {
+    width: 47.37%;
+  }
+  body .input-group1 {
+    gap: 10px;
+  }
 }/*# sourceMappingURL=contact-us.css.map */
