@@ -83,4 +83,32 @@ form .button {
   margin-top: 20px;
   align-items: center;
   margin-bottom: 10px;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-color: rgba(218, 220, 221, 0.579);
+  }
+  body form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-color: rgba(218, 220, 221, 0.579);
+  }
+  body form {
+    height: 88vh;
+    margin-top: 25px;
+  }
+  body .text h1 {
+    margin-top: 20px;
+  }
+  body button {
+    margin-top: 5px;
+  }
+  body .input-group {
+    width: 47.4%;
+  }
 }/*# sourceMappingURL=contact-us.css.map */
