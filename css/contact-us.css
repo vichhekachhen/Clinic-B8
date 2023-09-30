@@ -15,6 +15,31 @@ header p {
   font-weight: bold;
 }
 
+button {
+  background-color: #139ADF;
+  color: white;
+  font-size: large;
+  padding: 10px;
+  border-radius: 10px;
+  border: #139ADF;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 730px) {
+  .button {
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .button {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
 form {
   background-color: white;
   width: 70%;

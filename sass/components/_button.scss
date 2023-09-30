@@ -1,1 +1,25 @@
+@import "../mixins/responsive";
 
+
+button {
+    background-color: $primary-color;
+    color: white;
+    font-size: large;
+    padding: 10px;
+    border-radius: 10px;
+    border: $primary-color;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+
+    @include responsive('tablet') {
+        margin-top: 5px;
+    }
+
+    @include responsive('mobile') {
+        width: 100%;
+        margin: 10px;
+    }
+}
