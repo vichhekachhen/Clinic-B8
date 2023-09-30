@@ -154,6 +154,7 @@ header {
     font-size: 15px;
     background-color: rgb(232, 232, 232);
     padding: 25px 10px;
+    margin: 1px;
     border-radius: 16px;
   }
 }
@@ -170,7 +171,7 @@ header {
   .service-container-team {
     font-size: 15px;
     background-color: rgb(232, 232, 232);
-    padding: 20px;
+    padding: 40px 30px;
     border-radius: 16px;
   }
 }
@@ -226,7 +227,6 @@ header {
 @media screen and (max-width: 730px) {
   .value {
     font-size: 15.5px;
-    color: rgb(120, 117, 117);
   }
 }
 @media screen and (max-width: 620px) {
@@ -254,7 +254,6 @@ td {
   th,
   td {
     font-size: 15px;
-    border: 1px solid rgb(204, 204, 252);
   }
 }
 table th,

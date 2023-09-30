@@ -131,8 +131,9 @@ header {
 
     @include responsive('mobile') {
       font-size: 15px;
-      background-color: rgb(232, 232, 232);
+      background-color:rgb(232, 232, 232);
       padding: 25px 10px;
+      margin: 1px;
       border-radius: 16px;
     }
 
@@ -149,7 +150,7 @@ header {
   @include responsive('mobile') {
     font-size: 15px;
     background-color: rgb(232, 232, 232);
-    padding: 20px;
+    padding: 40px 30px;
     border-radius: 16px;
   }
 }
@@ -201,7 +202,6 @@ header {
 
   @include responsive('tablet') {
     font-size: 15.5px;
-    color: rgb(120, 117, 117);
   }
   @include responsive('mobile') {
     font-size: 15px;
@@ -225,7 +225,6 @@ td {
 
   @include responsive('mobile') {
     font-size: 15px;
-    border: 1px solid rgb(204, 204, 252);
   }
 
   th {
