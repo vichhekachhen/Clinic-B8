@@ -15,8 +15,111 @@ header p {
   font-weight: bold;
 }
 
+form {
+  background-color: white;
+  width: 70%;
+  height: 83vh;
+  padding: 30px;
+  margin-top: 25px;
+  margin: auto;
+  border-radius: 10px;
+}
+@media screen and (max-width: 730px) {
+  form {
+    width: 80%;
+    height: 88vh;
+    margin-top: 25px;
+    margin-bottom: 17px;
+  }
+}
+@media screen and (max-width: 620px) {
+  form {
+    width: 80%;
+    height: 99vh;
+    margin-top: 30px;
+  }
+}
+form .text h1 {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 730px) {
+  form .text h1 {
+    font-size: x-large;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 620px) {
+  form .text h1 {
+    font-size: x-large;
+    margin-top: 10px;
+  }
+}
+form p {
+  padding-bottom: 10px;
+}
+form .input-group,
+form .name,
+form .text,
+form .messeng {
+  width: 97.5%;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 620px) {
+  form .input-group,
+  form .name,
+  form .text,
+  form .messeng {
+    width: 98%;
+  }
+}
+form .input-group {
+  width: 47.9%;
+}
+@media screen and (max-width: 730px) {
+  form .input-group {
+    width: 47.4%;
+  }
+}
+@media screen and (max-width: 620px) {
+  form .input-group {
+    width: 98%;
+  }
+}
+form input[type=text],
+form input[type=email],
+form textarea {
+  background-color: rgb(226, 226, 226);
+  color: black;
+  font-size: 15px;
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: none;
+}
+form .input-group1 {
+  display: flex;
+  gap: 10px;
+}
+@media screen and (max-width: 620px) {
+  form .input-group1 {
+    flex-direction: column;
+    width: 99.7%;
+    gap: 2px;
+  }
+}
+
+body {
+  background-color: rgba(234, 236, 236, 0.81);
+}
+
 header {
   background-image: url(/images/service/pic2.webp);
+}
+
+.text h1 {
+  text-align: center;
+  margin-top: 10px;
+  margin: 0 3%;
 }
 
 .text-information {
@@ -33,57 +136,4 @@ header {
   font-weight: bold;
   margin: 10px;
   color: rgb(8, 8, 120);
-}
-
-form {
-  padding: 30px;
-  border-radius: 10px;
-  width: 70%;
-  height: 100vh;
-  margin: auto;
-}
-form h1 {
-  text-align: center;
-  margin: 10px;
-}
-form .input-group,
-form .name,
-form .text,
-form .messeng {
-  margin-bottom: 30px;
-  width: 97.5%;
-}
-form .input-group {
-  width: 47.9%;
-}
-form label {
-  font-weight: bold;
-}
-form input[type=text], form input[type=email], form textarea {
-  width: 100%;
-  padding: 10px;
-  outline: 0;
-  border: 1px solid #231212;
-  color: black;
-  background: transparent;
-  font-size: 15px;
-}
-form .input-group1 {
-  display: flex;
-  gap: 10px;
-}
-form button {
-  margin-bottom: 20px;
-  width: 20%;
-  height: 7vh;
-  border-radius: 10px;
-  border: #139ADF;
-  background-color: #139ADF;
-  color: white;
-  font-size: large;
-}
-form .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }/*# sourceMappingURL=appointment.css.map */

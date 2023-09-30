@@ -15,21 +15,6 @@ header p {
   font-weight: bold;
 }
 
-body {
-  background-color: rgba(234, 236, 236, 0.81);
-}
-
-header {
-  margin-bottom: 20px;
-  background-image: url(https://shorturl.at/gmrOV);
-}
-
-.text h1 {
-  text-align: center;
-  margin-top: 10px;
-  margin: 0 3%;
-}
-
 form {
   background-color: white;
   width: 70%;
@@ -50,7 +35,7 @@ form {
 @media screen and (max-width: 620px) {
   form {
     width: 80%;
-    height: 94vh;
+    height: 99vh;
     margin-top: 30px;
   }
 }
@@ -122,30 +107,20 @@ form .input-group1 {
     gap: 2px;
   }
 }
-form button {
-  background-color: #139ADF;
-  color: white;
-  font-size: large;
-  width: 20%;
-  height: 7vh;
-  border-radius: 10px;
-  border: #139ADF;
+
+body {
+  background-color: rgba(234, 236, 236, 0.81);
+}
+
+header {
   margin-bottom: 20px;
+  background-image: url(https://shorturl.at/gmrOV);
 }
-@media screen and (max-width: 730px) {
-  form button {
-    margin-top: 5px;
-  }
-}
-@media screen and (max-width: 620px) {
-  form button {
-    width: 30%;
-  }
-}
-form .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.text h1 {
+  text-align: center;
+  margin-top: 10px;
+  margin: 0 3%;
 }
 
 .map {

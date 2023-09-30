@@ -1,8 +1,19 @@
 @import "./components/group-minxin";
 @import "./components/variable";
 @import "./components/header";
+@import "./components/button";
+@import "./components/form";
+
+body {
+    background-color: rgba(234, 236, 236, 0.81);
+}
 header {
     background-image: url(/images/service/pic2.webp);
+}
+.text h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin: 0 3%;
 }
 .text-information {
     margin: 40px;
@@ -18,56 +29,5 @@ header {
         font-weight: bold;
         margin: 10px;
         color: $tertiary-color;
-    }
-}
-form{
-    padding: 30px;
-    border-radius: 10px;
-    width: 70%;
-    height: 100vh;
-    margin: auto;
-    h1{
-        text-align: center;
-        margin: 10px;
-    }
-    .input-group,
-    .name , 
-    .text, 
-    .messeng{
-        margin-bottom: 30px;
-        width: 97.5%;
-    }
-    .input-group{
-        width: 47.9%;
-    }
-    label {
-        font-weight: bold;
-    }
-    input[type="text"],input[type="email"], textarea{
-        width: 100%;
-        padding: 10px;
-        outline: 0;
-        border: 1px solid #231212;
-        color:$main-color;
-        background: transparent;
-        font-size: 15px;
-    }
-    .input-group1{
-        display: flex;
-        gap: 10px;
-    }
-    button{
-        margin-bottom: 20px;
-        width: 20%;
-        height: 7vh;
-        border-radius: 10px;
-        border: $primary-color;
-        background-color:$primary-color;
-        color: white;
-        font-size: large;
-    }
-    .button{
-        @include item-center;
-        align-items: center;
     }
 }
