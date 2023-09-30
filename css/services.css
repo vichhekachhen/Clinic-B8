@@ -192,6 +192,7 @@ header {
   .card-service {
     grid-template-columns: 1fr;
     gap: 5px;
+    margin: 10px;
   }
 }
 .card-service .service {
@@ -208,7 +209,7 @@ header {
 @media screen and (max-width: 620px) {
   .card-service .service {
     font-size: 15px;
-    background-color: rgb(232, 232, 232);
+    background-color: rgb(230, 230, 230);
     padding: 30px;
     border-radius: 16px;
   }

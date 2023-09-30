@@ -170,6 +170,7 @@ header {
   @include responsive('mobile') {
     grid-template-columns: 1fr;
     gap: 5px;
+    margin: 10px;
   }
 
   .service {
@@ -183,7 +184,7 @@ header {
       }
     @include responsive('mobile') {
       font-size: 15px;
-      background-color: rgb(232, 232, 232);
+      background-color: rgb(230, 230, 230);
       padding: 30px;
       border-radius: 16px;
     }
