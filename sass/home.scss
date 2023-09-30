@@ -1,6 +1,7 @@
 @import "./components/group-minxin";
 @import "./components/variable";
 @import "./components/header";
+@import "./mixins/responsive";
 
 /* ------------------main-------------- */
 
@@ -29,6 +30,7 @@ header{
 /* ----card-header---- */
 .card-clinic {
     display: flex;
+   flex-wrap: wrap;
 }
 
 .card-bg {
@@ -43,7 +45,12 @@ header{
         font-size: 35px;
         color: $primary-color;
         background-color: $secondary-color;
-        border-radius: 20px;
+        border-radius: 40px;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 10px;
         padding: 5px;
     }
@@ -51,6 +58,11 @@ header{
         margin-top: 10px;
         color: $secondary-color;
     }
+    @include responsive('mobile') {
+        width: 100%;
+        text-align: justify;
+      }
+
 }
 .card-bg:first-child {
     background-color: $tertiary-color-two ;
@@ -62,10 +74,14 @@ header{
 /* -----aside----- */
 
 aside {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px 100px 60px;
+    @include responsive('mobile') {
+        padding: 20px;
+    }
 }
 
 .title {
@@ -78,17 +94,31 @@ aside {
     margin-bottom: 30px;
     color: black;
     }
+    @include responsive('mobile') {
+        text-align: justify;
+        justify-content: center;
+        text-align: center;
+    }
 }
 .card-edu {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    @include responsive('mobile') {
+        gap: 10;
+    }
 }
 
 .card-bg-2 {
     width: 49%;
     background-color: #DFE8F3;
     padding: 20px;
+    @include responsive('mobile') {
+        width: 100%;
+        text-align: justify;
+        font-size: 15px;
+
+    }
 }
 
 .main-point {
@@ -100,8 +130,18 @@ aside {
         background-color: #0385BB;
         border-radius: 20px;
         margin-right: 10px;
+        font-size: 25px;
         padding: 5px;
         color: white;
+        border-radius: 40px;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @include responsive('mobile') {
+        font-size: 20px;
     }
 }
 
@@ -111,9 +151,12 @@ aside {
     background-image: url(../images/home/image-2.jpg);
     background-size: cover;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    @include responsive('mobile') {
+       height: 120px;
+    }
 }
 
 .card-clinics {
@@ -124,9 +167,16 @@ aside {
     i {
         font-size: 50px;
         color: $secondary-color;
+        @include responsive('mobile') {
+            font-size: 30px;
+        }
     }
     p {
         color: $secondary-color;
+    }
+    @include responsive('mobile') {
+       padding: 30px;
+       font-size: 10px;
     }
 }
 
@@ -136,12 +186,20 @@ aside {
     justify-content: space-between;
     font-size: 15px;
     padding: 20px;
+    @include responsive('mobile') {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .aside-left {
     width: 50%;
     text-align: center;
     padding: 20px;
+    @include responsive('mobile') {
+        width: 100%;
+    }
 }
 h2 {
     margin: 30px;
@@ -195,12 +253,18 @@ tr td:nth-child(3) {
     width: 50%;
     text-align: center;
     padding: 20px;
+    @include responsive('mobile') {
+        width: 100%;
+    }
 }
 .card-1 > img {
     width: 320px;
 
     p {
         font-size: 20px;
+    }
+    @include responsive('mobile') {
+        width: 200px;
     }
 }
 

@@ -41,6 +41,7 @@ header #request:hover {
 /* ----card-header---- */
 .card-clinic {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .card-bg {
@@ -56,13 +57,24 @@ header #request:hover {
   font-size: 35px;
   color: #139ADF;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 40px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 10px;
   padding: 5px;
 }
 .card-bg p {
   margin-top: 10px;
   color: white;
+}
+@media screen and (max-width: 620px) {
+  .card-bg {
+    width: 100%;
+    text-align: justify;
+  }
 }
 
 .card-bg:first-child {
@@ -75,10 +87,16 @@ header #request:hover {
 
 /* -----aside----- */
 aside {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px 100px 60px;
+}
+@media screen and (max-width: 620px) {
+  aside {
+    padding: 20px;
+  }
 }
 
 .title {
@@ -92,17 +110,36 @@ aside {
   margin-bottom: 30px;
   color: black;
 }
+@media screen and (max-width: 620px) {
+  .title {
+    text-align: justify;
+    justify-content: center;
+    text-align: center;
+  }
+}
 
 .card-edu {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
+@media screen and (max-width: 620px) {
+  .card-edu {
+    gap: 10;
+  }
+}
 
 .card-bg-2 {
   width: 49%;
   background-color: #DFE8F3;
   padding: 20px;
+}
+@media screen and (max-width: 620px) {
+  .card-bg-2 {
+    width: 100%;
+    text-align: justify;
+    font-size: 15px;
+  }
 }
 
 .main-point {
@@ -115,8 +152,20 @@ aside {
   background-color: #0385BB;
   border-radius: 20px;
   margin-right: 10px;
+  font-size: 25px;
   padding: 5px;
   color: white;
+  border-radius: 40px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 620px) {
+  .main-point {
+    font-size: 20px;
+  }
 }
 
 .aside-one {
@@ -125,9 +174,14 @@ aside {
   background-image: url(../images/home/image-2.jpg);
   background-size: cover;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
+}
+@media screen and (max-width: 620px) {
+  .aside-one {
+    height: 120px;
+  }
 }
 
 .card-clinics {
@@ -140,8 +194,19 @@ aside {
   font-size: 50px;
   color: white;
 }
+@media screen and (max-width: 620px) {
+  .card-clinics i {
+    font-size: 30px;
+  }
+}
 .card-clinics p {
   color: white;
+}
+@media screen and (max-width: 620px) {
+  .card-clinics {
+    padding: 30px;
+    font-size: 10px;
+  }
 }
 
 /* ----aside-two------ */
@@ -151,11 +216,23 @@ aside {
   font-size: 15px;
   padding: 20px;
 }
+@media screen and (max-width: 620px) {
+  .aside-two {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .aside-left {
   width: 50%;
   text-align: center;
   padding: 20px;
+}
+@media screen and (max-width: 620px) {
+  .aside-left {
+    width: 100%;
+  }
 }
 
 h2 {
@@ -216,12 +293,22 @@ tr td:nth-child(3) {
   text-align: center;
   padding: 20px;
 }
+@media screen and (max-width: 620px) {
+  .aside-right {
+    width: 100%;
+  }
+}
 
 .card-1 > img {
   width: 320px;
 }
 .card-1 > img p {
   font-size: 20px;
+}
+@media screen and (max-width: 620px) {
+  .card-1 > img {
+    width: 200px;
+  }
 }
 
 p > label {
