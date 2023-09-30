@@ -20,33 +20,29 @@ body {
 }
 
 header {
-  background-image: url(/images/service/pic1.jpg);
+  margin-bottom: 20px;
+  background-image: url(https://shorturl.at/gmrOV);
 }
 
 .text h1 {
   text-align: center;
-  margin: 0 3%;
   margin-top: 10px;
+  margin: 0 3%;
 }
 
 form {
-  padding: 30px;
-  border-radius: 10px;
-  width: 70%;
-  height: 85vh;
   background-color: white;
-  margin: auto;
+  width: 70%;
+  height: 83vh;
+  padding: 30px;
   margin-top: 25px;
-}
-@media screen and (max-width: 1024px) {
-  form {
-    margin-top: 25px;
-  }
+  margin: auto;
+  border-radius: 10px;
 }
 @media screen and (max-width: 730px) {
   form {
-    height: 88vh;
     width: 80%;
+    height: 88vh;
     margin-top: 25px;
     margin-bottom: 17px;
   }
@@ -63,14 +59,14 @@ form .text h1 {
 }
 @media screen and (max-width: 730px) {
   form .text h1 {
-    margin-top: 20px;
     font-size: x-large;
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 620px) {
   form .text h1 {
-    margin-top: 10px;
     font-size: x-large;
+    margin-top: 10px;
   }
 }
 form p {
@@ -80,8 +76,8 @@ form .input-group,
 form .name,
 form .text,
 form .messeng {
-  margin-bottom: 30px;
   width: 97.5%;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 620px) {
   form .input-group,
@@ -104,14 +100,16 @@ form .input-group {
     width: 98%;
   }
 }
-form input[type=text], form input[type=email], form textarea {
+form input[type=text],
+form input[type=email],
+form textarea {
+  background-color: rgb(226, 226, 226);
+  color: black;
+  font-size: 15px;
   width: 100%;
   padding: 10px;
   outline: 0;
   border: none;
-  background-color: rgb(226, 226, 226);
-  color: black;
-  font-size: 15px;
 }
 form .input-group1 {
   display: flex;
@@ -119,20 +117,20 @@ form .input-group1 {
 }
 @media screen and (max-width: 620px) {
   form .input-group1 {
+    flex-direction: column;
     width: 99.7%;
     gap: 2px;
-    flex-direction: column;
   }
 }
 form button {
-  margin-bottom: 20px;
+  background-color: #139ADF;
+  color: white;
+  font-size: large;
   width: 20%;
   height: 7vh;
   border-radius: 10px;
   border: #139ADF;
-  background-color: #139ADF;
-  color: white;
-  font-size: large;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 730px) {
   form button {
@@ -153,7 +151,7 @@ form .button {
 .map {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
   align-items: center;
+  margin-top: 20px;
   margin-bottom: 10px;
 }/*# sourceMappingURL=contact-us.css.map */
