@@ -36,7 +36,7 @@ header {
   }
 
   @include responsive('tablet') {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr ;
   }
 
   @include responsive('mobile') {
@@ -75,10 +75,10 @@ header {
     }
 
     @include responsive('tablet') {
-      background-color: rgb(21, 127, 193);
+      background-color: rgb(243, 243, 243);
     }
 
-    .image-right:nth-child(1),
+    
     .image-right:nth-child(2),
     .image-right:nth-child(4) {
       @include responsive('tablet') {
