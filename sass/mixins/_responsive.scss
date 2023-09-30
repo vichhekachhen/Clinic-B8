@@ -1,0 +1,11 @@
+$break-point: (
+    'mobile': 620px,
+    'tablet': 730px,
+    'laptop': 1024px
+);
+
+@mixin responsive($device) {
+    @media screen and (max-width: map-get($break-point, $device)){
+        @content;
+    }
+}

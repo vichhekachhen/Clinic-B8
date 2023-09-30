@@ -1,14 +1,25 @@
 @import "./components/variable";
 @import "./components/group-minxin";
 @import "./components/header";
+@import "mixins/responsive";
 
 header {
   background-image: url(/images/service/pic1.jpg);
 }
+
 .title {
-  @include text-center;
+  @include content-centered;
   text-transform: uppercase;
   margin: 1%;
+
+  @include responsive('tablet') {
+    margin: 10px;
+
+  }
+
+  @include responsive('mobile') {
+    padding: 20px;
+  }
 }
 
 .service-image {
@@ -16,8 +27,21 @@ header {
   grid-template-columns: 1fr 1fr;
   margin: 0px 30px;
 
+  @include responsive('tablet') {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include responsive('mobile') {
+    grid-template-columns: 1fr;
+  }
+
   .service-image-left {
     margin: 15px;
+
+    @include responsive('tablet') {
+      background-color: rgb(21, 127, 193);
+    }
+
   }
 
   .service-image-right {
@@ -25,6 +49,22 @@ header {
     flex-wrap: wrap;
     gap: 12px;
     margin: 15px;
+
+    @include responsive('tablet') {
+      background-color: rgb(21, 127, 193);
+    }
+
+    .image-right:nth-child(1),
+    .image-right:nth-child(2),
+    .image-right:nth-child(4) {
+      @include responsive('tablet') {
+        display: none;
+      }
+    }
+  }
+
+  @include responsive('mobile') {
+    display: none;
   }
 }
 
@@ -33,11 +73,33 @@ header {
   grid-template-columns: 1fr 1fr;
   margin: 0px 45px;
 
+  @include responsive('tablet') {
+    grid-template-columns: 1fr;
+  }
+
+  @include responsive('mobile') {
+    display: none;
+  }
+
   .service-container-right {
     @include content-centered;
 
+    @include responsive('tablet') {
+      background-color: rgb(244, 244, 244);
+      border-radius: 10px;
+      line-height: 55px;
+      padding: 20px;
+      margin: 10px;
+    }
+
     p {
       line-height: 20px;
+    }
+  }
+
+  .service-container-left {
+    @include responsive('tablet') {
+      display: none;
     }
   }
 }
@@ -47,8 +109,32 @@ header {
   grid-template-columns: repeat(4, 1fr);
   margin: 0px 45px;
 
+  @include responsive('tablet') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include responsive('mobile') {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
   .card-team {
     @include content-centered;
+
+    @include responsive('tablet') {
+      font-size: 15px;
+      background-color: rgb(232, 232, 232);
+      padding: 25px 10px;
+      margin: 15px;
+      border-radius: 16px;
+    }
+
+    @include responsive('mobile') {
+      font-size: 15px;
+      background-color: rgb(232, 232, 232);
+      padding: 25px 10px;
+      border-radius: 16px;
+    }
 
     h5 {
       padding: 10px;
@@ -59,14 +145,47 @@ header {
 .service-container-team {
   @include content-centered;
   margin: 25px 50px;
+
+  @include responsive('mobile') {
+    font-size: 15px;
+    background-color: rgb(232, 232, 232);
+    padding: 20px;
+    border-radius: 16px;
+  }
 }
 
 .card-service {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
+  @include responsive('tablet') {
+    grid-template-columns: 1fr 1fr;
+
+    .service:nth-child(3) {
+      display: none;
+    }
+  }
+
+  @include responsive('mobile') {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
   .service {
     margin: 50px;
+    @include responsive('tablet') {
+      background-color: rgb(232, 232, 232);
+      padding: 25px;
+      margin: 35px;
+      border-radius: 16px;
+  
+      }
+    @include responsive('mobile') {
+      font-size: 15px;
+      background-color: rgb(232, 232, 232);
+      padding: 30px;
+      border-radius: 16px;
+    }
 
     p {
       @include content-centered;
@@ -79,6 +198,14 @@ header {
 
 .value {
   margin: 10px 50px;
+
+  @include responsive('tablet') {
+    font-size: 15.5px;
+    color: rgb(120, 117, 117);
+  }
+  @include responsive('mobile') {
+    font-size: 15px;
+  }
 
   p {
     line-height: 50px;
@@ -95,6 +222,11 @@ td {
   padding: 15px;
   border: 1px solid $quaternary-color;
   border-collapse: collapse;
+
+  @include responsive('mobile') {
+    font-size: 15px;
+    border: 1px solid rgb(204, 204, 252);
+  }
 
   th {
     color: $tertiary-color;

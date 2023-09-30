@@ -1,27 +1,39 @@
 header {
-  background-image: url(/images/service/pic1.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
   color: #139ADF;
   padding: 8%;
-  height: 65vh;
+  height: 75vh;
+  margin-top: 60px;
+}
+header h1 {
+  padding: 10px;
 }
 header p {
   padding: 6px;
   font-weight: bold;
 }
 
-h2 {
-  padding: 10px;
+header {
+  background-image: url(/images/service/pic1.jpg);
 }
 
 .title {
   text-align: center;
   align-items: center;
-  text-align: center;
   text-transform: uppercase;
-  margin: 2%;
+  margin: 1%;
+}
+@media screen and (max-width: 730px) {
+  .title {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .title {
+    padding: 20px;
+  }
 }
 
 .service-image {
@@ -29,8 +41,23 @@ h2 {
   grid-template-columns: 1fr 1fr;
   margin: 0px 30px;
 }
+@media screen and (max-width: 730px) {
+  .service-image {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 620px) {
+  .service-image {
+    grid-template-columns: 1fr;
+  }
+}
 .service-image .service-image-left {
   margin: 15px;
+}
+@media screen and (max-width: 730px) {
+  .service-image .service-image-left {
+    background-color: rgb(21, 127, 193);
+  }
 }
 .service-image .service-image-right {
   display: flex;
@@ -38,18 +65,59 @@ h2 {
   gap: 12px;
   margin: 15px;
 }
+@media screen and (max-width: 730px) {
+  .service-image .service-image-right {
+    background-color: rgb(21, 127, 193);
+  }
+}
+@media screen and (max-width: 730px) {
+  .service-image .service-image-right .image-right:nth-child(1),
+  .service-image .service-image-right .image-right:nth-child(2),
+  .service-image .service-image-right .image-right:nth-child(4) {
+    display: none;
+  }
+}
+@media screen and (max-width: 620px) {
+  .service-image {
+    display: none;
+  }
+}
 
 .service-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0px 45px;
 }
+@media screen and (max-width: 730px) {
+  .service-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 620px) {
+  .service-container {
+    display: none;
+  }
+}
 .service-container .service-container-right {
   text-align: center;
   align-items: center;
 }
+@media screen and (max-width: 730px) {
+  .service-container .service-container-right {
+    background-color: rgb(244, 244, 244);
+    border-radius: 10px;
+    line-height: 55px;
+    padding: 20px;
+    margin: 10px;
+  }
+}
 .service-container .service-container-right p {
   line-height: 20px;
+}
+@media screen and (max-width: 730px) {
+  .service-container .service-container-left {
+    display: none;
+  }
 }
 
 .service-team {
@@ -57,9 +125,37 @@ h2 {
   grid-template-columns: repeat(4, 1fr);
   margin: 0px 45px;
 }
+@media screen and (max-width: 730px) {
+  .service-team {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 620px) {
+  .service-team {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
 .service-team .card-team {
   text-align: center;
   align-items: center;
+}
+@media screen and (max-width: 730px) {
+  .service-team .card-team {
+    font-size: 15px;
+    background-color: rgb(232, 232, 232);
+    padding: 25px 10px;
+    margin: 15px;
+    border-radius: 16px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .service-team .card-team {
+    font-size: 15px;
+    background-color: rgb(232, 232, 232);
+    padding: 25px 10px;
+    border-radius: 16px;
+  }
 }
 .service-team .card-team h5 {
   padding: 10px;
@@ -70,13 +166,51 @@ h2 {
   align-items: center;
   margin: 25px 50px;
 }
+@media screen and (max-width: 620px) {
+  .service-container-team {
+    font-size: 15px;
+    background-color: rgb(232, 232, 232);
+    padding: 20px;
+    border-radius: 16px;
+  }
+}
 
 .card-service {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+@media screen and (max-width: 730px) {
+  .card-service {
+    grid-template-columns: 1fr 1fr;
+  }
+  .card-service .service:nth-child(3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 620px) {
+  .card-service {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
 .card-service .service {
   margin: 50px;
+}
+@media screen and (max-width: 730px) {
+  .card-service .service {
+    background-color: rgb(232, 232, 232);
+    padding: 25px;
+    margin: 35px;
+    border-radius: 16px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .card-service .service {
+    font-size: 15px;
+    background-color: rgb(232, 232, 232);
+    padding: 30px;
+    border-radius: 16px;
+  }
 }
 .card-service .service p {
   text-align: center;
@@ -88,6 +222,17 @@ h2 {
 
 .value {
   margin: 10px 50px;
+}
+@media screen and (max-width: 730px) {
+  .value {
+    font-size: 15.5px;
+    color: rgb(120, 117, 117);
+  }
+}
+@media screen and (max-width: 620px) {
+  .value {
+    font-size: 15px;
+  }
 }
 .value p {
   line-height: 50px;
@@ -103,6 +248,14 @@ td {
   padding: 15px;
   border: 1px solid rgba(189, 189, 189, 0.743);
   border-collapse: collapse;
+}
+@media screen and (max-width: 620px) {
+  table,
+  th,
+  td {
+    font-size: 15px;
+    border: 1px solid rgb(204, 204, 252);
+  }
 }
 table th,
 th th,
