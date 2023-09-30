@@ -12,6 +12,10 @@ header {
   text-transform: uppercase;
   margin: 1%;
 
+  @include responsive('laptop') {
+    margin: 15px;
+  }
+
   @include responsive('tablet') {
     margin: 10px;
 
@@ -27,6 +31,10 @@ header {
   grid-template-columns: 1fr 1fr;
   margin: 0px 30px;
 
+  @include responsive('laptop') {
+    grid-template-columns: 1fr;
+  }
+
   @include responsive('tablet') {
     grid-template-columns: 1fr 1fr;
   }
@@ -37,6 +45,10 @@ header {
 
   .service-image-left {
     margin: 15px;
+
+    @include responsive('laptop') {
+      display: none;
+    }
 
     @include responsive('tablet') {
       background-color: rgb(21, 127, 193);
@@ -49,6 +61,18 @@ header {
     flex-wrap: wrap;
     gap: 12px;
     margin: 15px;
+
+    @include responsive('laptop') {
+      flex-wrap: nowrap;
+      gap: 20px;
+      margin: 10px;
+    }
+
+    .image-right {
+      @include responsive('laptop') {
+        background-color: rgb(7, 137, 201);
+      }
+    }
 
     @include responsive('tablet') {
       background-color: rgb(21, 127, 193);
@@ -73,6 +97,10 @@ header {
   grid-template-columns: 1fr 1fr;
   margin: 0px 45px;
 
+  @include responsive('laptop') {
+    grid-template-columns: 1fr;
+  }
+
   @include responsive('tablet') {
     grid-template-columns: 1fr;
   }
@@ -83,6 +111,12 @@ header {
 
   .service-container-right {
     @include content-centered;
+
+    @include responsive('laptop') {
+      justify-content: center;
+      margin: 12px;
+      line-height: 30px;
+    }
 
     @include responsive('tablet') {
       background-color: rgb(244, 244, 244);
@@ -98,137 +132,144 @@ header {
   }
 
   .service-container-left {
-    @include responsive('tablet') {
-      display: none;
-    }
-  }
-}
-
-.service-team {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 0px 45px;
-
-  @include responsive('tablet') {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @include responsive('mobile') {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  .card-team {
-    @include content-centered;
-
-    @include responsive('tablet') {
-      font-size: 15px;
-      background-color: rgb(232, 232, 232);
-      padding: 25px 10px;
-      margin: 15px;
-      border-radius: 16px;
-    }
-
-    @include responsive('mobile') {
-      font-size: 15px;
-      background-color:rgb(232, 232, 232);
-      padding: 25px 10px;
-      margin: 1px;
-      border-radius: 16px;
-    }
-
-    h5 {
-      padding: 10px;
-    }
-  }
-}
-
-.service-container-team {
-  @include content-centered;
-  margin: 25px 50px;
-
-  @include responsive('mobile') {
-    font-size: 15px;
-    background-color: rgb(232, 232, 232);
-    padding: 40px 30px;
-    border-radius: 16px;
-  }
-}
-
-.card-service {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-
-  @include responsive('tablet') {
-    grid-template-columns: 1fr 1fr;
-
-    .service:nth-child(3) {
-      display: none;
-    }
-  }
-
-  @include responsive('mobile') {
-    grid-template-columns: 1fr;
-    gap: 5px;
-    margin: 10px;
-  }
-
-  .service {
-    margin: 50px;
-    @include responsive('tablet') {
-      background-color: rgb(232, 232, 232);
-      padding: 25px;
-      margin: 35px;
-      border-radius: 16px;
-  
+    @include responsive('laptop') {
+        display: none;
       }
+
+      @include responsive('tablet') {
+        display: none;
+      }
+    }
+  }
+
+  .service-team {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0px 45px;
+
+    @include responsive('tablet') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include responsive('mobile') {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .card-team {
+      @include content-centered;
+
+      @include responsive('tablet') {
+        font-size: 15px;
+        background-color: rgb(232, 232, 232);
+        padding: 25px 10px;
+        margin: 15px;
+        border-radius: 16px;
+      }
+
+      @include responsive('mobile') {
+        font-size: 15px;
+        background-color: rgb(232, 232, 232);
+        padding: 25px 10px;
+        margin: 1px;
+        border-radius: 16px;
+      }
+
+      h5 {
+        padding: 10px;
+      }
+    }
+  }
+
+  .service-container-team {
+    @include content-centered;
+    margin: 25px 50px;
+
     @include responsive('mobile') {
       font-size: 15px;
-      background-color: rgb(230, 230, 230);
-      padding: 30px;
+      background-color: rgb(232, 232, 232);
+      padding: 40px 30px;
       border-radius: 16px;
+    }
+  }
+
+  .card-service {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include responsive('tablet') {
+      grid-template-columns: 1fr 1fr;
+
+      .service:nth-child(3) {
+        display: none;
+      }
+    }
+
+    @include responsive('mobile') {
+      grid-template-columns: 1fr;
+      gap: 5px;
+      margin: 10px;
+    }
+
+    .service {
+      margin: 50px;
+
+      @include responsive('tablet') {
+        background-color: rgb(232, 232, 232);
+        padding: 25px;
+        margin: 35px;
+        border-radius: 16px;
+
+      }
+
+      @include responsive('mobile') {
+        font-size: 15px;
+        background-color: rgb(230, 230, 230);
+        padding: 30px;
+        border-radius: 16px;
+      }
+
+      p {
+        @include content-centered;
+        color: $tertiary-color;
+        font-weight: bold;
+        padding: 10px;
+      }
+    }
+  }
+
+  .value {
+    margin: 10px 50px;
+
+    @include responsive('tablet') {
+      font-size: 15.5px;
+    }
+
+    @include responsive('mobile') {
+      font-size: 15px;
     }
 
     p {
-      @include content-centered;
-      color: $tertiary-color;
-      font-weight: bold;
-      padding: 10px;
+      line-height: 50px;
     }
   }
-}
 
-.value {
-  margin: 10px 50px;
-
-  @include responsive('tablet') {
-    font-size: 15.5px;
-  }
-  @include responsive('mobile') {
-    font-size: 15px;
+  .timetable {
+    margin: 30px 0px;
   }
 
-  p {
-    line-height: 50px;
+  table,
+  th,
+  td {
+    padding: 15px;
+    border: 1px solid $quaternary-color;
+    border-collapse: collapse;
+
+    @include responsive('mobile') {
+      font-size: 15px;
+    }
+
+    th {
+      color: $tertiary-color;
+    }
   }
-}
-
-.timetable {
-  margin: 30px 0px;
-}
-
-table,
-th,
-td {
-  padding: 15px;
-  border: 1px solid $quaternary-color;
-  border-collapse: collapse;
-
-  @include responsive('mobile') {
-    font-size: 15px;
-  }
-
-  th {
-    color: $tertiary-color;
-  }
-}
