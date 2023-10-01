@@ -15,22 +15,53 @@ nav {
   z-index: 1;
   top: 0;
 }
-
-.logo img {
+nav .logo img {
   width: 45%;
 }
-
-.nav-right {
+@media screen and (max-width: 730px) {
+  nav .logo img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 620px) {
+  nav .logo img {
+    width: 40%;
+  }
+}
+nav .nav-right {
   width: 50%;
   display: flex;
   justify-content: space-evenly;
 }
-.nav-right a {
+@media screen and (max-width: 620px) {
+  nav .nav-right {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+}
+nav .nav-right a {
   padding: 1em;
   text-decoration: none;
-  color: black;
+  color: rgba(3, 2, 2, 0.668);
+  font-weight: bold;
 }
-.nav-right #appointment {
+@media screen and (max-width: 620px) {
+  nav .nav-right a {
+    width: 100%;
+    left: 0;
+  }
+}
+nav .nav-right a:hover {
+  background: #139ADF;
+  border-radius: 5px;
+  color: white;
+}
+nav .nav-right #appointment {
   padding: 1em;
   background: #139ADF;
   border: none;
@@ -38,43 +69,39 @@ nav {
   color: white;
   cursor: pointer;
 }
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  nav {
-    width: 100%;
-    display: flex;
-    justify-content: start;
-  }
-  nav .nav-right {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  nav .nav-right a {
-    padding: 0.3em;
-  }
+nav .nav-right #appointment:hover {
+  color: #5686E1;
+}
+@media screen and (max-width: 730px) {
   nav .nav-right #appointment {
     display: none;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
-  nav {
-    width: auto;
-  }
-  nav a {
-    padding: 0.5em;
-  }
-  nav .logo img {
-    width: 55%;
-  }
-  nav .nav-right {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-  }
-  nav #appointment {
+@media screen and (max-width: 620px) {
+  nav .nav-right #appointment {
     display: none;
   }
 }
+nav label {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 620px) {
+  nav label {
+    display: initial;
+  }
+}
+nav #menu-bar {
+  display: none;
+}
+@media screen and (max-width: 620px) {
+  nav #menu-bar :checked ~ section {
+    display: initial;
+  }
+}
+
 footer {
   display: flex;
   justify-content: space-around;

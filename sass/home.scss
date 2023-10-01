@@ -352,11 +352,11 @@ tr td:nth-child(3) {
         width: 350px;
     }
     @include responsive('tablet') {
-        width: 250px;
+        width: 450px;
     
     }
     @include responsive('mobile') {
-        width: 150px;
+        width: 350px;
     }
 }
 

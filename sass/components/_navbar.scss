@@ -10,69 +10,92 @@ nav {
   position: fixed;
   z-index: 1;
   top: 0;
-}
 
-.logo img {
-  width: 45%;
-}
+  .logo img {
+    width: 45%;
 
-.nav-right {
-  width: 50%;
-  display: flex;
-  justify-content: space-evenly;
+    @include responsive('tablet') {
+      width: 50%;
+    }
 
-  a {
-    padding: 1em;
-    text-decoration: none;
-    color: $main-color;
+    @include responsive('mobile') {
+      width: 40%;
+    }
   }
 
-  #appointment {
-    padding: 1em;
-    background: $primary-color;
-    border: none;
-    border-radius: 8px;
-    color: $secondary-color;
-    cursor: pointer;
-  }
-}
-
-@media(min-width:768px) and (max-width: 1024px) {
-  nav {
-    width: 100%;
+  .nav-right {
+    width: 50%;
     display: flex;
-    justify-content: start;
+    justify-content: space-evenly;
 
-    .nav-right {
-      display: flex;
-      justify-content: space-evenly;
+    @include responsive('mobile') {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      border-top: 1px solid rgba(0, 0, 0, .1);
+      display: none;
+    }
 
-      a {
-        padding: 0.3em;
+    a {
+      padding: 1em;
+      text-decoration: none;
+      color: $main-color-two;
+      font-weight: bold;
+      @include responsive('mobile') {
+       width: 100%;
+       left: 0;
       }
 
-      #appointment {
+      &:hover {
+        background: $primary-color;
+        border-radius: 5px;
+        color: $secondary-color;
+      }
+
+    }
+
+    #appointment {
+      padding: 1em;
+      background: $primary-color;
+      border: none;
+      border-radius: 8px;
+      color: $secondary-color;
+      cursor: pointer;
+
+      &:hover {
+        color: $primary-color-four;
+      }
+
+      @include responsive('tablet') {
+        display: none;
+      }
+
+      @include responsive('mobile') {
         display: none;
       }
     }
   }
-}
-@media(min-width:320px) and (max-width:767px) {
-  nav {
-    width: auto;
-      a {
-        padding: 0.5em;
+
+  label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+
+    @include responsive('mobile') {
+      display: initial;
+    }
+  }
+
+  #menu-bar {
+    display: none;
+    @include responsive('mobile') {
+      :checked ~ section{
+        display: initial;
       }
-      .logo img {
-        width: 55%;
-      }
-      .nav-right {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-      }
-      #appointment {
-        display: none;
-      }
-}
+    }
+  }
+
 }
