@@ -38,6 +38,11 @@ header{
 .card-clinic {
     display: flex;
    flex-wrap: wrap;
+   @include responsive('mobile') {
+    gap: 10px;
+    padding: 20px;
+    
+}
 }
 
 .card-bg {
@@ -48,6 +53,7 @@ header{
     align-items: center; 
     padding: 30px;
     color: $secondary-color;
+    
     i {
         font-size: 35px;
         color: $primary-color;
@@ -74,6 +80,7 @@ header{
     @include responsive('mobile') {
         width: 100%;
         text-align: justify;
+        border-radius: 8px;
     }
 
 }
@@ -151,6 +158,7 @@ aside {
         width: 100%;
         text-align: justify;
         font-size: 15px;
+        border-radius: 5px;
 
     }
 }
@@ -203,7 +211,7 @@ aside {
     
     }
     @include responsive('mobile') {
-       height: 109px;
+       display: none;
     }
 }
 
@@ -222,9 +230,6 @@ aside {
             font-size: 30px;
         
         }
-        @include responsive('mobile') {
-            font-size: 25px;
-        }
     }
     p {
         color: $secondary-color;
@@ -236,12 +241,8 @@ aside {
     @include responsive('tablet') {
         padding: 48px;
         font-size: 15px;
-    
     }
-    @include responsive('mobile') {
-       padding: 26px;
-       font-size: 10px;
-    }
+  
 }
 
 /* ----aside-two------ */
@@ -279,7 +280,7 @@ h2 {
 table tr,
 th,
 td {
-    padding: 15px;
+    padding: 10px;
 }
 
 table>h1 {
@@ -290,10 +291,10 @@ tr th {
     border-radius: 5px;
     background: $primary-color-three ;
     color: $secondary-color;
+    padding: 20px;
 }
 tr td{
     color: $primary-color-three;
-    
 }
 tr td:first-child {
     border-radius: 5px;
@@ -301,6 +302,7 @@ tr td:first-child {
 }
 tr td:nth-child(2){
     text-align: start;
+    color: rgb(105, 104, 104);
 }
 tr td:nth-child(3) {
     border-radius: 5px;

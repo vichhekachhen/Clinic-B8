@@ -53,6 +53,12 @@ header #request:hover {
   display: flex;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 580px) {
+  .card-clinic {
+    gap: 10px;
+    padding: 20px;
+  }
+}
 
 .card-bg {
   width: 25%;
@@ -91,6 +97,7 @@ header #request:hover {
   .card-bg {
     width: 100%;
     text-align: justify;
+    border-radius: 8px;
   }
 }
 
@@ -182,6 +189,7 @@ aside {
     width: 100%;
     text-align: justify;
     font-size: 15px;
+    border-radius: 5px;
   }
 }
 
@@ -243,7 +251,7 @@ aside {
 }
 @media screen and (max-width: 580px) {
   .aside-one {
-    height: 109px;
+    display: none;
   }
 }
 
@@ -267,11 +275,6 @@ aside {
     font-size: 30px;
   }
 }
-@media screen and (max-width: 580px) {
-  .card-clinics i {
-    font-size: 25px;
-  }
-}
 .card-clinics p {
   color: white;
 }
@@ -285,12 +288,6 @@ aside {
   .card-clinics {
     padding: 48px;
     font-size: 15px;
-  }
-}
-@media screen and (max-width: 580px) {
-  .card-clinics {
-    padding: 26px;
-    font-size: 10px;
   }
 }
 
@@ -337,7 +334,7 @@ h2 {
 table tr,
 th,
 td {
-  padding: 15px;
+  padding: 10px;
 }
 
 table > h1 {
@@ -348,6 +345,7 @@ tr th {
   border-radius: 5px;
   background: #5686E1;
   color: white;
+  padding: 20px;
 }
 
 tr td {
@@ -361,6 +359,7 @@ tr td:first-child {
 
 tr td:nth-child(2) {
   text-align: start;
+  color: rgb(105, 104, 104);
 }
 
 tr td:nth-child(3) {

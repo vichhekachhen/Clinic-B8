@@ -23,7 +23,7 @@ nav .logo img {
     width: 50%;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 580px) {
   nav .logo img {
     width: 40%;
   }
@@ -33,7 +33,7 @@ nav .nav-right {
   display: flex;
   justify-content: space-evenly;
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 580px) {
   nav .nav-right {
     position: absolute;
     top: 100%;
@@ -50,7 +50,7 @@ nav .nav-right a {
   color: rgba(3, 2, 2, 0.668);
   font-weight: bold;
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 580px) {
   nav .nav-right a {
     width: 100%;
     left: 0;
@@ -77,7 +77,7 @@ nav .nav-right #appointment:hover {
     display: none;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 580px) {
   nav .nav-right #appointment {
     display: none;
   }
@@ -88,7 +88,7 @@ nav label {
   cursor: pointer;
   display: none;
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 580px) {
   nav label {
     display: initial;
   }
@@ -96,7 +96,7 @@ nav label {
 nav #menu-bar {
   display: none;
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 580px) {
   nav #menu-bar :checked ~ section {
     display: initial;
   }
