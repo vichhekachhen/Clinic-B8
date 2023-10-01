@@ -24,6 +24,11 @@ header h1 {
   margin-top: 20px;
   color: #139ADF;
 }
+@media screen and (max-width: 620px) {
+  header h1 {
+    font-size: 30px;
+  }
+}
 header #request {
   background-color: #139ADF;
   color: white;
@@ -70,6 +75,13 @@ header #request:hover {
   margin-top: 10px;
   color: white;
 }
+@media screen and (max-width: 730px) {
+  .card-bg {
+    width: 50%;
+    text-align: justify;
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 620px) {
   .card-bg {
     width: 100%;
@@ -78,11 +90,15 @@ header #request:hover {
 }
 
 .card-bg:first-child {
-  background-color: rgba(3, 81, 159, 0.58);
+  background-color: rgba(14, 107, 200, 0.705);
 }
 
 .card-bg:nth-child(3) {
-  background-color: rgba(65, 127, 194, 0.8235294118);
+  background-color: rgba(65, 133, 206, 0.8235294118);
+}
+
+.card-bg:nth-child(4) {
+  background-color: #5686E1;
 }
 
 /* -----aside----- */
@@ -92,6 +108,11 @@ aside {
   flex-direction: column;
   align-items: center;
   padding: 20px 100px 60px;
+}
+@media screen and (max-width: 730px) {
+  aside {
+    padding: 20px;
+  }
 }
 @media screen and (max-width: 620px) {
   aside {
@@ -104,6 +125,11 @@ aside {
 }
 .title h1 {
   font-size: 30px;
+}
+@media screen and (max-width: 730px) {
+  .title h1 {
+    font-size: 25px;
+  }
 }
 .title h1,
 .title p {
@@ -134,6 +160,13 @@ aside {
   background-color: #DFE8F3;
   padding: 20px;
 }
+@media screen and (max-width: 730px) {
+  .card-bg-2 {
+    width: 100%;
+    text-align: justify;
+    font-size: 15px;
+  }
+}
 @media screen and (max-width: 620px) {
   .card-bg-2 {
     width: 100%;
@@ -162,6 +195,11 @@ aside {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 730px) {
+  .main-point {
+    font-size: 24px;
+  }
+}
 @media screen and (max-width: 620px) {
   .main-point {
     font-size: 20px;
@@ -178,15 +216,20 @@ aside {
   align-items: center;
   text-align: center;
 }
+@media screen and (max-width: 730px) {
+  .aside-one {
+    height: 178px;
+  }
+}
 @media screen and (max-width: 620px) {
   .aside-one {
-    height: 120px;
+    height: 109px;
   }
 }
 
 .card-clinics {
   flex-direction: column;
-  background: rgba(3, 81, 159, 0.58);
+  background: rgba(14, 107, 200, 0.705);
   padding: 110px;
   font-size: 25px;
 }
@@ -194,17 +237,28 @@ aside {
   font-size: 50px;
   color: white;
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 730px) {
   .card-clinics i {
     font-size: 30px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .card-clinics i {
+    font-size: 25px;
   }
 }
 .card-clinics p {
   color: white;
 }
+@media screen and (max-width: 730px) {
+  .card-clinics {
+    padding: 48px;
+    font-size: 15px;
+  }
+}
 @media screen and (max-width: 620px) {
   .card-clinics {
-    padding: 30px;
+    padding: 24px;
     font-size: 10px;
   }
 }
@@ -215,6 +269,13 @@ aside {
   justify-content: space-between;
   font-size: 15px;
   padding: 20px;
+}
+@media screen and (max-width: 730px) {
+  .aside-two {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 620px) {
   .aside-two {
@@ -228,6 +289,11 @@ aside {
   width: 50%;
   text-align: center;
   padding: 20px;
+}
+@media screen and (max-width: 730px) {
+  .aside-left {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 620px) {
   .aside-left {
@@ -266,7 +332,7 @@ tr td:first-child {
 
 tr td:nth-child(3) {
   border-radius: 5px;
-  background: rgba(65, 127, 194, 0.8235294118);
+  background: rgba(65, 133, 206, 0.8235294118);
   color: white;
   font-weight: bold;
 }
@@ -293,6 +359,11 @@ tr td:nth-child(3) {
   text-align: center;
   padding: 20px;
 }
+@media screen and (max-width: 730px) {
+  .aside-right {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 620px) {
   .aside-right {
     width: 100%;
@@ -305,9 +376,14 @@ tr td:nth-child(3) {
 .card-1 > img p {
   font-size: 20px;
 }
+@media screen and (max-width: 730px) {
+  .card-1 > img {
+    width: 250px;
+  }
+}
 @media screen and (max-width: 620px) {
   .card-1 > img {
-    width: 200px;
+    width: 150px;
   }
 }
 
@@ -323,6 +399,19 @@ p > label {
 }
 .aside-three h1 {
   padding: 70px;
+}
+.aside-three iframe {
+  width: 90%;
+}
+@media screen and (max-width: 620px) {
+  .aside-three iframe {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .aside-three {
+    font-size: 12px;
+  }
 }
 
 /* ----Med&Time----- */
