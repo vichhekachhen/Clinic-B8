@@ -1,15 +1,31 @@
 @import "variable";
+@import "../mixins/responsive";
 
 footer {
     display: flex;
     justify-content: space-around;
     color: $secondary-color;
     background-color: $tertiary-color;
+
+    @include responsive('mobile') {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 30px;
+
+    }
+
     a {
         text-decoration: none;
         color: white;
+
+        @include responsive('mobile') {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
     }
 }
+
 ul {
     list-style: none;
 }
@@ -19,13 +35,21 @@ ul {
     line-height: 30px;
     padding: 3% 0;
 
+    @include responsive('mobile') {
+        width: 100%;
+        line-height: 25px;
+    }
+
     .icon {
         display: flex;
         gap: 15px;
     }
+
     i {
         color: $secondary-color;
-       
-    }
 
+        @include responsive('mobile') {
+            margin-left: 50px;
+        }
+    }
 }
