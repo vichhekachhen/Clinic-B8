@@ -24,7 +24,7 @@ header h1 {
   margin-top: 20px;
   color: #139ADF;
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 580px) {
   header h1 {
     font-size: 30px;
   }
@@ -41,6 +41,11 @@ header #request {
 }
 header #request:hover {
   font-size: 21px;
+}
+@media screen and (max-width: 580px) {
+  header {
+    height: 300px;
+  }
 }
 
 /* ----card-header---- */
@@ -82,7 +87,7 @@ header #request:hover {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 580px) {
   .card-bg {
     width: 100%;
     text-align: justify;
@@ -114,7 +119,7 @@ aside {
     padding: 20px;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 580px) {
   aside {
     padding: 20px;
   }
@@ -136,7 +141,7 @@ aside {
   margin-bottom: 30px;
   color: black;
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 580px) {
   .title {
     text-align: justify;
     justify-content: center;
@@ -149,7 +154,7 @@ aside {
   flex-wrap: wrap;
   gap: 20px;
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 580px) {
   .card-edu {
     gap: 10;
   }
@@ -160,6 +165,11 @@ aside {
   background-color: #DFE8F3;
   padding: 20px;
 }
+@media screen and (max-width: 1024px) {
+  .card-bg-2 {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 730px) {
   .card-bg-2 {
     width: 100%;
@@ -167,7 +177,7 @@ aside {
     font-size: 15px;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 580px) {
   .card-bg-2 {
     width: 100%;
     text-align: justify;
@@ -195,12 +205,17 @@ aside {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 1024px) {
+  .main-point {
+    font-size: 30px;
+  }
+}
 @media screen and (max-width: 730px) {
   .main-point {
     font-size: 24px;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 580px) {
   .main-point {
     font-size: 20px;
   }
@@ -216,12 +231,17 @@ aside {
   align-items: center;
   text-align: center;
 }
+@media screen and (max-width: 1024px) {
+  .aside-one {
+    height: 229px;
+  }
+}
 @media screen and (max-width: 730px) {
   .aside-one {
     height: 178px;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 580px) {
   .aside-one {
     height: 109px;
   }
@@ -237,12 +257,17 @@ aside {
   font-size: 50px;
   color: white;
 }
+@media screen and (max-width: 1024px) {
+  .card-clinics i {
+    font-size: 40px;
+  }
+}
 @media screen and (max-width: 730px) {
   .card-clinics i {
     font-size: 30px;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 580px) {
   .card-clinics i {
     font-size: 25px;
   }
@@ -250,15 +275,21 @@ aside {
 .card-clinics p {
   color: white;
 }
+@media screen and (max-width: 1024px) {
+  .card-clinics {
+    padding: 59px;
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 730px) {
   .card-clinics {
     padding: 48px;
     font-size: 15px;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 580px) {
   .card-clinics {
-    padding: 24px;
+    padding: 26px;
     font-size: 10px;
   }
 }
@@ -268,7 +299,6 @@ aside {
   display: flex;
   justify-content: space-between;
   font-size: 15px;
-  padding: 20px;
 }
 @media screen and (max-width: 730px) {
   .aside-two {
@@ -277,11 +307,10 @@ aside {
     align-items: center;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 580px) {
   .aside-two {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
 }
 
@@ -295,7 +324,7 @@ aside {
     width: 100%;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 580px) {
   .aside-left {
     width: 100%;
   }
@@ -330,6 +359,10 @@ tr td:first-child {
   background-color: rgba(189, 189, 189, 0.743);
 }
 
+tr td:nth-child(2) {
+  text-align: start;
+}
+
 tr td:nth-child(3) {
   border-radius: 5px;
   background: rgba(65, 133, 206, 0.8235294118);
@@ -353,6 +386,11 @@ tr td:nth-child(3) {
   text-align: center;
   gap: 20px;
 }
+@media screen and (max-width: 1024px) {
+  .card-aside {
+    flex-direction: column;
+  }
+}
 
 .aside-right {
   width: 50%;
@@ -364,7 +402,7 @@ tr td:nth-child(3) {
     width: 100%;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 580px) {
   .aside-right {
     width: 100%;
   }
@@ -376,12 +414,17 @@ tr td:nth-child(3) {
 .card-1 > img p {
   font-size: 20px;
 }
+@media screen and (max-width: 1024px) {
+  .card-1 > img {
+    width: 350px;
+  }
+}
 @media screen and (max-width: 730px) {
   .card-1 > img {
     width: 250px;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 580px) {
   .card-1 > img {
     width: 150px;
   }
@@ -403,12 +446,12 @@ p > label {
 .aside-three iframe {
   width: 90%;
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 580px) {
   .aside-three iframe {
     height: 300px;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 580px) {
   .aside-three {
     font-size: 12px;
   }
