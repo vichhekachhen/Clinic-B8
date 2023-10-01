@@ -10,7 +10,7 @@ header {
 .title {
   @include content-centered;
   text-transform: uppercase;
-  margin: 1%;
+  margin: 2%;
 
   @include responsive('laptop') {
     margin: 15px;
@@ -111,6 +111,9 @@ header {
 
   .service-container-right {
     @include content-centered;
+    h2 {
+      padding: 16px;
+    }
 
     @include responsive('laptop') {
       justify-content: center;
@@ -132,6 +135,8 @@ header {
   }
 
   .service-container-left {
+    margin-left: 14px;
+    width: 90%;
     @include responsive('laptop') {
         display: none;
       }

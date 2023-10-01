@@ -65,7 +65,7 @@ nav {
       cursor: pointer;
 
       &:hover {
-        color: $primary-color-four;
+        color: $tertiary-color;
       }
 
       @include responsive('tablet') {
@@ -86,6 +86,7 @@ nav {
 
     @include responsive('mobile') {
       display: initial;
+      margin-right: 16px;
     }
   }
 

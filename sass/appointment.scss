@@ -1,5 +1,6 @@
 @import "./components/group-minxin";
 @import "./components/variable";
+@import "./components/navbar";
 @import "./components/header";
 @import "./components/button";
 @import "./components/form";
@@ -9,6 +10,13 @@ body {
 }
 header {
     background-image: url(/images/service/pic2.webp);
+}
+nav {
+    .nav-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+    }
 }
 .text h1 {
     text-align: center;
@@ -31,3 +39,4 @@ header {
         color: $tertiary-color;
     }
 }
+

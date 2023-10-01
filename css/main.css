@@ -70,7 +70,7 @@ nav .nav-right #appointment {
   cursor: pointer;
 }
 nav .nav-right #appointment:hover {
-  color: #5686E1;
+  color: rgb(8, 8, 120);
 }
 @media screen and (max-width: 730px) {
   nav .nav-right #appointment {
@@ -91,6 +91,7 @@ nav label {
 @media screen and (max-width: 620px) {
   nav label {
     display: initial;
+    margin-right: 16px;
   }
 }
 nav #menu-bar {
