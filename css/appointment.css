@@ -1,3 +1,101 @@
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+nav .logo img {
+  width: 45%;
+}
+@media screen and (max-width: 730px) {
+  nav .logo img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 620px) {
+  nav .logo img {
+    width: 40%;
+  }
+}
+nav .nav-right {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 620px) {
+  nav .nav-right {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+}
+nav .nav-right a {
+  padding: 1em;
+  text-decoration: none;
+  color: rgba(3, 2, 2, 0.668);
+  font-weight: bold;
+}
+@media screen and (max-width: 620px) {
+  nav .nav-right a {
+    width: 100%;
+    left: 0;
+  }
+}
+nav .nav-right a:hover {
+  background: #139ADF;
+  border-radius: 5px;
+  color: white;
+}
+nav .nav-right #appointment {
+  padding: 1em;
+  background: #139ADF;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+nav .nav-right #appointment:hover {
+  color: rgb(8, 8, 120);
+}
+@media screen and (max-width: 730px) {
+  nav .nav-right #appointment {
+    display: none;
+  }
+}
+@media screen and (max-width: 620px) {
+  nav .nav-right #appointment {
+    display: none;
+  }
+}
+nav label {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 620px) {
+  nav label {
+    display: initial;
+    margin-right: 16px;
+  }
+}
+nav #menu-bar {
+  display: none;
+}
+@media screen and (max-width: 620px) {
+  nav #menu-bar :checked ~ section {
+    display: initial;
+  }
+}
+
 header {
   background-position: center;
   background-size: cover;
@@ -139,6 +237,12 @@ body {
 
 header {
   background-image: url(/images/service/pic2.webp);
+}
+
+nav .nav-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
 }
 
 .text h1 {

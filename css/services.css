@@ -23,7 +23,7 @@ header {
   text-align: center;
   align-items: center;
   text-transform: uppercase;
-  margin: 1%;
+  margin: 2%;
 }
 @media screen and (max-width: 1024px) {
   .title {
@@ -133,6 +133,9 @@ header {
   text-align: center;
   align-items: center;
 }
+.service-container .service-container-right h2 {
+  padding: 16px;
+}
 @media screen and (max-width: 1024px) {
   .service-container .service-container-right {
     justify-content: center;
@@ -151,6 +154,10 @@ header {
 }
 .service-container .service-container-right p {
   line-height: 20px;
+}
+.service-container .service-container-left {
+  margin-left: 14px;
+  width: 90%;
 }
 @media screen and (max-width: 1024px) {
   .service-container .service-container-left {
